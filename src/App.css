@@ -1,0 +1,63 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/**** AMPLIFY UI CSS ***/
+
+/* You can also override the authenticator's amplify-* classes.
+For example, if you'd like to hide the sign up tab, you can override the amplify-tabs clas */
+.amplify-tabs {
+  display: none;
+}
+
+/* If you'd like to update the primary color of your submit button you can override the amplify-button class. */
+.amplify-button[data-variation="primary"] {
+  background: linear-gradient(
+    to right,
+    var(--amplify-colors-green-80),
+    var(--amplify-colors-orange-40)
+  );
+}
+
+/* Dark Theme */
+
+/* [data-amplify-authenticator] {
+  --amplify-colors-background-primary: var(--amplify-colors-neutral-90);
+  --amplify-colors-background-secondary: var(--amplify-colors-neutral-100);
+  --amplify-colors-background-tertiary: var(--amplify-colors-black);
+  --amplify-colors-border-primary: var(--amplify-colors-neutral-20);
+  --amplify-colors-border-secondary: var(--amplify-colors-neutral-40);
+  --amplify-colors-border-tertiary: var(--amplify-colors-neutral-60);
+  --amplify-colors-brand-primary-10: var(--amplify-colors-teal-100);
+  --amplify-colors-brand-primary-20: var(--amplify-colors-teal-90);
+  --amplify-colors-brand-primary-40: var(--amplify-colors-teal-80);
+  --amplify-colors-brand-primary-60: var(--amplify-colors-teal-60);
+  --amplify-colors-brand-primary-80: var(--amplify-colors-teal-40);
+  --amplify-colors-brand-primary-90: var(--amplify-colors-teal-20);
+  --amplify-colors-brand-primary-100: var(--amplify-colors-teal-10);
+  --amplify-colors-font-interactive: var(--amplify-colors-white);
+  --amplify-components-heading-color: var(--amplify-colors-neutral-20);
+  --amplify-components-tabs-item-active-border-color: var(
+    --amplify-colors-white
+  );
+  --amplify-components-tabs-item-active-color: var(--amplify-colors-white);
+  --amplify-components-tabs-item-color: var(--amplify-colors-white);
+  --amplify-components-tabs-item-focus-color: var(--amplify-colors-white);
+  --amplify-components-text-color: var(--amplify-colors-font-interactive);
+} */
